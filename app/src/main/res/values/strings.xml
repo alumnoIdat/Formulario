@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="toggleoff">Vibrate off</string>
+    <string name="toggleon">Vibrate on</string>
+</resources>

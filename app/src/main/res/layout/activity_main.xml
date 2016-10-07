@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.chango.formulario.MainActivity">
+
+    <Button
+        android:text="Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:text="Formulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:elevation="0dp"
+        android:layout_gravity="top"
+        android:layout_column="2" />
+
+    <Button
+        android:text="Salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_gravity="right"
+        android:enabled="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/android_button"
+        android:id="@+id/imageView"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <TextView
+        android:text="Large Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="numero de telefono"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_columnSpan="4"
+        android:onClick="sendClick" />
+
+    <TextView
+        android:text="Large Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_column="0"
+        android:layout_row="4" />
+
+    <TextView
+        android:text="Large Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_column="0"
+        android:layout_row="5" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_weight="1"
+            android:onClick="radioClick" />
+
+        <RadioButton
+            android:text="blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:onClick="radioClick" />
+    </RadioGroup>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_row="8"
+        android:layout_column="0" />
+
+    <ToggleButton
+        android:text="VibrateOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton"
+        android:layout_column="0"
+        android:layout_row="9"
+        android:textOff="@string/toggleoff"
+        android:textOn="@string/toggleon"
+        android:onClick="toggleClick" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_column="0"
+        android:layout_row="10"
+        android:layout_columnSpan="3" />
+
+    <CheckBox
+        android:text="check it out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_row="6"
+        android:elevation="1dp"
+        android:layout_column="0"
+        android:onClick="checkBoxClick" />
+
+</GridLayout>
